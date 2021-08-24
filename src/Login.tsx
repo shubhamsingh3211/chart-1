@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Redirect } from "react-router";
 
 function Login() {
-  const [email, setEmail] = useState("candidate@sigmoid.com");
-  const [password, setPassword] = useState("Sigmoid#123");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [token, setToken] = useState(localStorage.getItem("token"));
   const [error, setError] = useState("");
   const login = () => {
